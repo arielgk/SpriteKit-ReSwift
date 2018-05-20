@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75372922A078F553DABE606C /* Pods_testclicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2E047CB1FD3EFE5464ACDB /* Pods_testclicker.framework */; };
+		B0944EE620B0E0DB00E4DCAA /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EE520B0E0DB00E4DCAA /* Actions.swift */; };
+		B0944EE820B0E80200E4DCAA /* SVLSpriteNodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EE720B0E80200E4DCAA /* SVLSpriteNodeButton.swift */; };
+		B0AB145C20B0DF38005AD33B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB145B20B0DF38005AD33B /* AppState.swift */; };
+		B0AB146020B0DF75005AD33B /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB145F20B0DF75005AD33B /* CounterReducer.swift */; };
 		B0D75DA520AFEE5E00E19A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D75DA420AFEE5E00E19A11 /* AppDelegate.swift */; };
 		B0D75DA720AFEE5E00E19A11 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0D75DA620AFEE5E00E19A11 /* GameScene.sks */; };
 		B0D75DA920AFEE5E00E19A11 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0D75DA820AFEE5E00E19A11 /* Actions.sks */; };
@@ -18,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615D90BC2AE691892137E345 /* Pods-testclicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testclicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testclicker/Pods-testclicker.debug.xcconfig"; sourceTree = "<group>"; };
+		7F2E047CB1FD3EFE5464ACDB /* Pods_testclicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testclicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ED2F4887519478B104AA72 /* Pods-testclicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testclicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-testclicker/Pods-testclicker.release.xcconfig"; sourceTree = "<group>"; };
+		B0944EE520B0E0DB00E4DCAA /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		B0944EE720B0E80200E4DCAA /* SVLSpriteNodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVLSpriteNodeButton.swift; sourceTree = "<group>"; };
+		B0AB145B20B0DF38005AD33B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B0AB145F20B0DF75005AD33B /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		B0D75DA120AFEE5E00E19A11 /* testclicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testclicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D75DA420AFEE5E00E19A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D75DA620AFEE5E00E19A11 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -35,17 +47,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75372922A078F553DABE606C /* Pods_testclicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30654DCB09603E788652065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				615D90BC2AE691892137E345 /* Pods-testclicker.debug.xcconfig */,
+				94ED2F4887519478B104AA72 /* Pods-testclicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0944EE920B10BD000E4DCAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B0AB145A20B0DF0D005AD33B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB145B20B0DF38005AD33B /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		B0AB145D20B0DF4E005AD33B /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				B0AB145F20B0DF75005AD33B /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		B0AB145E20B0DF57005AD33B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				B0944EE520B0E0DB00E4DCAA /* Actions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
 		B0D75D9820AFEE5E00E19A11 = {
 			isa = PBXGroup;
 			children = (
 				B0D75DA320AFEE5E00E19A11 /* testclicker */,
 				B0D75DA220AFEE5E00E19A11 /* Products */,
+				A30654DCB09603E788652065 /* Pods */,
+				EFF83A328D1D1E213E595F59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +115,30 @@
 		B0D75DA320AFEE5E00E19A11 /* testclicker */ = {
 			isa = PBXGroup;
 			children = (
+				B0944EE920B10BD000E4DCAA /* New Group */,
 				B0D75DA420AFEE5E00E19A11 /* AppDelegate.swift */,
 				B0D75DA620AFEE5E00E19A11 /* GameScene.sks */,
-				B0D75DA820AFEE5E00E19A11 /* Actions.sks */,
+				B0AB145E20B0DF57005AD33B /* Actions */,
+				B0AB145D20B0DF4E005AD33B /* Reducers */,
+				B0AB145A20B0DF0D005AD33B /* State */,
 				B0D75DAA20AFEE5E00E19A11 /* GameScene.swift */,
+				B0D75DA820AFEE5E00E19A11 /* Actions.sks */,
 				B0D75DAC20AFEE5E00E19A11 /* GameViewController.swift */,
 				B0D75DAE20AFEE5E00E19A11 /* Main.storyboard */,
 				B0D75DB120AFEE5E00E19A11 /* Assets.xcassets */,
 				B0D75DB320AFEE5E00E19A11 /* LaunchScreen.storyboard */,
 				B0D75DB620AFEE5E00E19A11 /* Info.plist */,
+				B0944EE720B0E80200E4DCAA /* SVLSpriteNodeButton.swift */,
 			);
 			path = testclicker;
+			sourceTree = "<group>";
+		};
+		EFF83A328D1D1E213E595F59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F2E047CB1FD3EFE5464ACDB /* Pods_testclicker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D75DB920AFEE5E00E19A11 /* Build configuration list for PBXNativeTarget "testclicker" */;
 			buildPhases = (
+				BFBAC03CE05E6D9FBFD3A6C8 /* [CP] Check Pods Manifest.lock */,
 				B0D75D9D20AFEE5E00E19A11 /* Sources */,
 				B0D75D9E20AFEE5E00E19A11 /* Frameworks */,
 				B0D75D9F20AFEE5E00E19A11 /* Resources */,
+				3F6881A86874D50BFCD11171 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,14 +212,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F6881A86874D50BFCD11171 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testclicker/Pods-testclicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testclicker/Pods-testclicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBAC03CE05E6D9FBFD3A6C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testclicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0D75D9D20AFEE5E00E19A11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B0D75DAB20AFEE5E00E19A11 /* GameScene.swift in Sources */,
+				B0AB146020B0DF75005AD33B /* CounterReducer.swift in Sources */,
 				B0D75DAD20AFEE5E00E19A11 /* GameViewController.swift in Sources */,
+				B0944EE620B0E0DB00E4DCAA /* Actions.swift in Sources */,
 				B0D75DA520AFEE5E00E19A11 /* AppDelegate.swift in Sources */,
+				B0944EE820B0E80200E4DCAA /* SVLSpriteNodeButton.swift in Sources */,
+				B0AB145C20B0DF38005AD33B /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,30 +397,38 @@
 		};
 		B0D75DBA20AFEE5E00E19A11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615D90BC2AE691892137E345 /* Pods-testclicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D962D5W8Y3;
 				INFOPLIST_FILE = testclicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arielkuhn.testclicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arielkuhn.testclicker2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B0D75DBB20AFEE5E00E19A11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94ED2F4887519478B104AA72 /* Pods-testclicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D962D5W8Y3;
 				INFOPLIST_FILE = testclicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arielkuhn.testclicker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arielkuhn.testclicker2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

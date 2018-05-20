@@ -12,8 +12,16 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    
+//   private var textLabel: SKLabelNode!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
+
+        
+//        textLabel = child
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -31,7 +39,7 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
+  
     override var shouldAutorotate: Bool {
         return true
     }
