@@ -1,3 +1,11 @@
+//
+//  SVLSpriteNodeButton.swift
+//  testclicker
+//
+//  Created by Ariel Kuhn on 19/5/18.
+//  Copyright © 2018 arielkuhn. All rights reserved.
+//
+
 import SpriteKit
 
 protocol SVLSpriteNodeButtonDelegate: class {

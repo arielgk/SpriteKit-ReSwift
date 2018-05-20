@@ -24,7 +24,7 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
     
     override func didMove(to view: SKView) {
         
-         mainStore.subscribe(self)
+        mainStore.subscribe(self)
         
         addButton = childNode(withName: "addButton") as! SVLSpriteNodeButton
         addButton.isUserInteractionEnabled = true
@@ -45,7 +45,6 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
     
     func newState(state: AppState) {
         // when the state changes, the UI is updated to reflect the current state
-//            textLabel.text = "\(mainStore.state.counter)"
         let counter =  mainStore.state.counter
         
         if(textLabel != nil){
