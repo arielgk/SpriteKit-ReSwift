@@ -13,11 +13,12 @@ import ReSwift
 func postReducer(action: Action, state: [Post]?) -> [Post] {
     // if no state has been provided, create the default state
     var state = state ?? []
+    
 
     switch action {
-    case _ as PostGetAction:
-        print(action)
-//        state = action?
+    case let action as PostGetAction:
+        state = action.posts
+
     default:
         break
     }
