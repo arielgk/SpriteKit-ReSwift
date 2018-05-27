@@ -11,7 +11,7 @@ import ReSwift
 
 
 let mainStore = Store<AppState>(
-    reducer: counterReducer,
+    reducer: appReducer,
     state: nil
 )
 

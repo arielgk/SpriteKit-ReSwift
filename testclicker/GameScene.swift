@@ -60,6 +60,9 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
         switch button {
         case addButton:
             mainStore.dispatch(CounterActionIncrease());
+            let posts : [Post] = [ Post(id:3,name:"bla")]
+            
+            mainStore.dispatch(PostGetAction(posts: posts))
         case substractButton:
              mainStore.dispatch(CounterActionDecrease());
         default:

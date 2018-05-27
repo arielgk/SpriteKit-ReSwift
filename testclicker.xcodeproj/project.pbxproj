@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		75372922A078F553DABE606C /* Pods_testclicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2E047CB1FD3EFE5464ACDB /* Pods_testclicker.framework */; };
+		B04F189920BB632500BCD591 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F189820BB632500BCD591 /* AppReducer.swift */; };
 		B0944EE620B0E0DB00E4DCAA /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EE520B0E0DB00E4DCAA /* Actions.swift */; };
 		B0944EE820B0E80200E4DCAA /* SVLSpriteNodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EE720B0E80200E4DCAA /* SVLSpriteNodeButton.swift */; };
+		B0944EEB20B13F8F00E4DCAA /* PostReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EEA20B13F8F00E4DCAA /* PostReducer.swift */; };
+		B0944EEE20B15B2000E4DCAA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0944EED20B15B2000E4DCAA /* Post.swift */; };
 		B0AB145C20B0DF38005AD33B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB145B20B0DF38005AD33B /* AppState.swift */; };
 		B0AB146020B0DF75005AD33B /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AB145F20B0DF75005AD33B /* CounterReducer.swift */; };
 		B0D75DA520AFEE5E00E19A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D75DA420AFEE5E00E19A11 /* AppDelegate.swift */; };
@@ -26,8 +29,11 @@
 		615D90BC2AE691892137E345 /* Pods-testclicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testclicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testclicker/Pods-testclicker.debug.xcconfig"; sourceTree = "<group>"; };
 		7F2E047CB1FD3EFE5464ACDB /* Pods_testclicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testclicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ED2F4887519478B104AA72 /* Pods-testclicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testclicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-testclicker/Pods-testclicker.release.xcconfig"; sourceTree = "<group>"; };
+		B04F189820BB632500BCD591 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		B0944EE520B0E0DB00E4DCAA /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		B0944EE720B0E80200E4DCAA /* SVLSpriteNodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVLSpriteNodeButton.swift; sourceTree = "<group>"; };
+		B0944EEA20B13F8F00E4DCAA /* PostReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReducer.swift; sourceTree = "<group>"; };
+		B0944EED20B15B2000E4DCAA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B0AB145B20B0DF38005AD33B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B0AB145F20B0DF75005AD33B /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		B0D75DA120AFEE5E00E19A11 /* testclicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testclicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +76,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		B0944EEC20B15B0D00E4DCAA /*  Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0944EED20B15B2000E4DCAA /* Post.swift */,
+			);
+			path = " Models";
+			sourceTree = "<group>";
+		};
 		B0AB145A20B0DF0D005AD33B /* State */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				B0AB145F20B0DF75005AD33B /* CounterReducer.swift */,
+				B0944EEA20B13F8F00E4DCAA /* PostReducer.swift */,
+				B04F189820BB632500BCD591 /* AppReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -115,6 +131,7 @@
 		B0D75DA320AFEE5E00E19A11 /* testclicker */ = {
 			isa = PBXGroup;
 			children = (
+				B0944EEC20B15B0D00E4DCAA /*  Models */,
 				B0944EE920B10BD000E4DCAA /* New Group */,
 				B0D75DA420AFEE5E00E19A11 /* AppDelegate.swift */,
 				B0D75DA620AFEE5E00E19A11 /* GameScene.sks */,
@@ -260,7 +277,10 @@
 				B0AB146020B0DF75005AD33B /* CounterReducer.swift in Sources */,
 				B0D75DAD20AFEE5E00E19A11 /* GameViewController.swift in Sources */,
 				B0944EE620B0E0DB00E4DCAA /* Actions.swift in Sources */,
+				B04F189920BB632500BCD591 /* AppReducer.swift in Sources */,
+				B0944EEB20B13F8F00E4DCAA /* PostReducer.swift in Sources */,
 				B0D75DA520AFEE5E00E19A11 /* AppDelegate.swift in Sources */,
+				B0944EEE20B15B2000E4DCAA /* Post.swift in Sources */,
 				B0944EE820B0E80200E4DCAA /* SVLSpriteNodeButton.swift in Sources */,
 				B0AB145C20B0DF38005AD33B /* AppState.swift in Sources */,
 			);
