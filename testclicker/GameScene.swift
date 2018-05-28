@@ -37,8 +37,7 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
         
         
         textLabel = childNode(withName: "textLabelNode") as! SKLabelNode
-        textLabel.text = "0"
-
+        textLabel.text = String(mainStore.state.counter) ?? "0"
 
         
     }
@@ -55,7 +54,6 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         
-        print(mainStore.state.counter)
         if(mainStore.state.counter > 10){
             addButton.alpha = 0
         }else if(mainStore.state.counter <= 10){

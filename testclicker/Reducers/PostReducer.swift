@@ -12,7 +12,7 @@ import ReSwift
 // on the actions it receives
 func postReducer(action: Action, state: [Post]?) -> [Post] {
     // if no state has been provided, create the default state
-    var state = state ?? []
+    var state = state ?? AppState().posts
     
 
     switch action {

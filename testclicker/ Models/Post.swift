@@ -13,6 +13,6 @@ struct Post: Codable {
     var id: Int?
     var name: String?
    
-
+   
 }
 

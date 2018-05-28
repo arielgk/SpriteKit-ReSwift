@@ -6,7 +6,7 @@ import ReSwift
 
 
 func counterReducer(action: Action, counter: Int?) -> Int {
-    var counter = counter ?? 0
+    var counter = counter ?? AppState().counter
     
     switch action {
     case _ as CounterActionIncrease:
