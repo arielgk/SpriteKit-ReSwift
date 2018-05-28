@@ -54,6 +54,13 @@ class GameScene: SKScene,SVLSpriteNodeButtonDelegate, StoreSubscriber  {
     }
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        
+        print(mainStore.state.counter)
+        if(mainStore.state.counter > 10){
+            addButton.alpha = 0
+        }else if(mainStore.state.counter <= 10){
+            addButton.alpha = 1
+        }
     }
     
     func spriteNodeButtonPressed(_ button: SVLSpriteNodeButton) {
